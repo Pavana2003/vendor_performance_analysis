@@ -81,14 +81,14 @@ SQL (CTEs, joins, aggregation) · Python (pandas, matplotlib, seaborn, SciPy) ·
 
 ```
 ├── README.md
-├── ingestion_db.py                  # loads raw CSV files into SQLite
-├── get_vendor_summary.py            # builds and cleans the vendor_sales_summary table
-├── Exploratory Data Analysis.ipynb  # explores raw tables and builds the summary
-├── Vendor Performance Analysis.ipynb# analysis, charts and hypothesis test
-├── vendor_sales_summary.csv         # final summary table (10,692 rows)
-├── vendor_performance.pbix          # Power BI dashboard
-├── vendor_dashboard.jpg             # dashboard preview
-└── Vendor Performance Report.pdf    # project report
+├── ingestion_db.py                   # loads raw CSV files into SQLite
+├── get_vendor_summary.py             # builds and cleans the vendor_sales_summary table
+├── Exploratory Data Analysis.ipynb   # explores raw tables and builds the summary
+├── Vendor Performance Analysis.ipynb # analysis, charts and hypothesis test
+├── vendor_sales_summary.csv          # final summary table (10,692 rows)
+├── vendor_performance.pbix           # Power BI dashboard
+├── vendor_dashboard.jpg              # dashboard preview
+└── Vendor Performance Report.pdf     # project report
 ```
 
 The raw CSV files are too large for GitHub and are not included. Add them to a `data/` folder to rebuild the database.
@@ -107,7 +107,7 @@ The raw CSV files are too large for GitHub and are not included. Add them to a `
 3. Put the raw CSV files in a `data/` folder and create a `logs/` folder.
 4. Run `python ingestion_db.py` to create `inventory.db`.
 5. Run `python get_vendor_summary.py` to build the `vendor_sales_summary` table.
-6. Open `Vendor_Performance_Analysis.ipynb` to reproduce the analysis, or use `vendor_sales_summary.csv` directly.
+6. Open `Vendor Performance Analysis.ipynb` to reproduce the analysis, or use `vendor_sales_summary.csv` directly.
 7. Open `vendor_performance.pbix` in Power BI Desktop.
 
 ## Dataset
